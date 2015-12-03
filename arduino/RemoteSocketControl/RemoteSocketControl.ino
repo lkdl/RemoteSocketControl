@@ -30,12 +30,16 @@ void loop() {
   if (Serial.available()){
 
     // blocking read, wait for a incoming request
-    long inc = Serial.parseInt();
+    byte inc = Serial.read();
 
     // parse incoming request according to specificied protocol
-    byte group = (inc & 0xFF0000) >> 16;
-    byte socket = (inc & 0xFF00) >> 8;
-    byte state = inc & 0xFF;
+    byte group = inc >> 4;
+    byte socket = (inc & 0x14) >> 1;
+    byte state = inc & 0x1;
+
+    Serial.println(group, DEC);
+    Serial.println(socket, DEC);
+    Serial.println(state, DEC);
 
     // get the command
     int command = groups[group].sockets[socket].off;
