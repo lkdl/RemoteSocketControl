@@ -1,3 +1,5 @@
+#include "Config.h"
+
 /*
  * Represents a single remote socket.
  * For each remote socket exists a command to turn it on 
@@ -6,10 +8,10 @@
 struct Socket{
 
   // Command to the turn the socket on
-  int on;
+  unsigned long on;
 
   // Command to turn the socket off
-  int off;
+  unsigned long off;
 };
 
 /*
@@ -20,7 +22,7 @@ struct Socket{
  */
 struct Group{
   
-  // Protocol type which should be used for this group (
+  // Protocol type which should be used for this group
   int protocol;
   
   // Length of the pulse in microseconds
@@ -33,5 +35,5 @@ struct Group{
   int protocolLength;
   
   // Sockets of the group
-  Socket sockets[4];
+  Socket sockets[SOCKETS_PER_GROUP];
 };
