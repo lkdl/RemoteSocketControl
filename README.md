@@ -3,7 +3,7 @@ A web based, yet simple controller for 433 MHz remote sockets using an Arduino U
 
 ## Prerequisites
 
-You'll need a Raspberry Pi and an Arduino Uno (others should work as well, but currently the code is only tested against an Uno). Of course you will also need a 433 MHz sender (and most likely a receiver).
+You'll need a Raspberry Pi and an Arduino Uno (others should work as well, but currently the code is only tested against a Uno). Of course you will also need a 433 MHz sender (and most likely a receiver).
 
 ## Protocol used between the Raspberry and the Arduino
 
@@ -28,7 +28,7 @@ Please note that groups are only a way to organize the sockets and their option 
 
 The common rule of thumb "zero means success, everything else indiciates a failure" applies here.
 
-__Attention:__ A zero response does not mean that the socket has been set to the desired state (there is no easy way to determine this), it just means that the arduino has set the command sequence to its output pin. Everything else is not in control of this program.
+__Attention:__ A zero response does not mean that the socket has been set to the desired state (there is no easy way to determine this), it just means that the arduino has send the command sequence to its output pin. Everything else is not in control of this program.
 
 The error messages in detail:
 * __1:__ Invalid group: Request group is not configured (exceeds specified group size)
