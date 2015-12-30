@@ -1,0 +1,39 @@
+$rsc-primary-color: #6b3699;
+$rsc-secondary-color: white;
+$rsc-ternary-color: lighten($rsc-primary-color, 25);
+
+$error-base-color: #f2dede;
+$error-border-color: darken($error-base-color, 20);
+$error-font-color: darken($error-base-color, 50);
+
+$success-base-color: #82D17D;
+$success-border-color: $success-base-color;
+$success-font-color: $rsc-secondary-color;
+/*
+ * Skeleton variables
+ */
+
+// Skeleton breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Skeleton color variables
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: $rsc-ternary-color !default;
+$secondary-color: $rsc-secondary-color !default;
+$border-color: $rsc-primary-color !default;
+$link-color: $rsc-ternary-color !default;
+$font-color: #222 !default;
+
+// Skeleton Typography
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+// Skeleton Misc
+$global-radius: 4px !default;
+
+

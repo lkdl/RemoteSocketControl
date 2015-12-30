@@ -1,0 +1,72 @@
+// Import variables
+@import 'variables';
+
+// Skeleton base
+@import 'base/normalize';
+@import 'base/base-styles';
+@import 'base/utils';
+@import 'base/typography';
+
+// Modules from Skeleton
+@import 'modules/buttons';
+@import 'modules/forms';
+
+// Our Modules
+@import 'header';
+
+body {
+  background-color: $rsc-primary-color;
+  color: $rsc-secondary-color;
+}
+
+#username, #password {
+  color: $font-color;
+  margin-bottom: 0.5rem;
+}
+
+.login-button{
+  margin-top: 0.5rem;
+  margin-bottom: 3.0rem;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.alert-error{
+  padding: 15px;
+  border-radius: $global-radius;
+  background-color: $error-base-color;
+  border: 1px solid $error-border-color;
+  color: $error-font-color;
+}
+
+.group{
+  background-color: $rsc-secondary-color;
+  color: $rsc-primary-color;
+  padding: 15px;
+  border-radius: $global-radius;
+  margin-bottom: 20px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .row{
+    margin-bottom: 5px;
+  }
+}
+
+@keyframes success {
+  0% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+  50% {background-color: $success-base-color; border-color: $success-border-color}
+  100% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+}
+
+.success{
+  animation-name: success;
+  animation-duration: 2.0s;
+}

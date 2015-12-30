@@ -1,0 +1,23 @@
+{
+  "name": "RemoteSocketControl",
+  "homepage": "https://github.com/lkdl/RemoteSocketControl",
+  "description": "A web based, yet simple controller for 433 MHz remote sockets",
+  "authors": [
+    "Luca Keidel"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "flexboxgrid": "~6.3.0",
+    "Skeleton-Sass": "skeleton-scss#*"
+  }
+}

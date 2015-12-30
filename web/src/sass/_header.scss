@@ -1,0 +1,23 @@
+.header {
+  background-color: $rsc-secondary-color;
+  color: $rsc-primary-color;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  align-items: center;
+}
+
+.header {
+
+  .title{
+    font-size:2.0rem;
+    margin:0;
+    padding:0;
+  }
+}
+
+#logout-button, #logout-button:hover{
+  color: $rsc-primary-color;
+  border-color: $rsc-primary-color;
+}

@@ -1,0 +1,14 @@
+<div ng-controller="GroupsController">
+
+    <div ng-repeat="group in groups" class="group" ng-init="groupIndex = $index">
+        <h2>{{group.groupname}}</h2>
+        <div ng-repeat="socket in group.sockets" ng-controller="SocketController as SocketCtrl" class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <button class="button-primary u-full-width" ng-click="SocketCtrl.switchOn()" ng-class="{success: successOn}">{{socket}} on</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <button class="button-primary u-full-width" ng-click="SocketCtrl.switchOff()" ng-class="{success: successOff}">{{socket}} off</button>
+            </div>
+        </div>
+    </div>
+</div>
