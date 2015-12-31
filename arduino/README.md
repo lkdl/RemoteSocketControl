@@ -1,3 +1,16 @@
+# Setting up the Arduino
+
+The first step is to set up the Arduino. I'll assume the hardware is already set up properly, i.e. the 433 MHz sender is connected to a GPIO pin of the Arduino.
+The `RemoteSocketControl` folder is already an Arduino project which can be opened with the Arduino IDE.
+
+You will have to configure two things in the project, one is trivial, the other one not... ;) First, head to the `Config.h` and change the value of `TRANSMIT_PIN` if necessary. As you might have already guessed, this was the trivial part.
+The important configuration is the heart of the project: the configuration of your remote sockets and their control codes.
+Open `RemoteSocketControl.ino` and edit the group initialization to fit your needs.
+ 
+Of course you'll have to find out the control codes before by using the 433 MHz receiver and a receiver sketch. The process of determing the control codes is beyond the scope of this project, but there are enough resources available which cover this topic.
+ 
+Once you set everything up you can test the Arduino by opening a serial connection and send commands according to the protocol below.
+
 ## Protocol used between the Raspberry and the Arduino
 
 The following, very simple protocol is being used for the communcation between the Arduino and the Raspberry. Each message has the size of a byte (8 bit).
