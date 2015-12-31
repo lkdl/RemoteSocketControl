@@ -1,0 +1,16 @@
+body {
+  background-color: $rsc-primary-color;
+  color: $rsc-secondary-color;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.alert-error{
+  padding: 15px;
+  border-radius: $global-radius;
+  background-color: $error-base-color;
+  border: 1px solid $error-border-color;
+  color: $error-font-color;
+}

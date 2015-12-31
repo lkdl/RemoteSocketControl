@@ -1,0 +1,40 @@
+.group{
+  background-color: $rsc-secondary-color;
+  color: $rsc-primary-color;
+  padding: 15px;
+  border-radius: $global-radius;
+  margin-bottom: 20px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .row{
+    margin-bottom: 5px;
+  }
+}
+
+@keyframes success {
+  0% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+  50% {background-color: $success-base-color; border-color: $success-border-color}
+  100% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+}
+
+.success{
+  animation-name: success;
+  animation-duration: 2.0s;
+}
+
+@keyframes error {
+  0% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+  50% {background-color: $error-base-color; border-color: $error-border-color}
+  100% {background-color: $rsc-ternary-color; border-color: $rsc-ternary-color; }
+}
+
+.error{
+  animation-name: error;
+  animation-duration: 2.0s;
+}

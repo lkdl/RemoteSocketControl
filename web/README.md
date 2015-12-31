@@ -15,6 +15,6 @@ If everything worked, the app can be found in the `dist` folder. Copy the conten
 
 ## Configuration
 
-The configuration is located in `config.json`. You'll have to configure the host and the port of the MQTT broker as well as the groups and sockets.
+The configuration is located in `config.json.dist`. First, you have to copy the file and name the copy `config.json`. Then you'll have to configure the host and the port of the MQTT broker as well as the groups and sockets.
 
 __The groups and sockets in this configuration file have to match your groups from the Arduino configuration!__ The groups are stored as an array, the position of the group is the implicit declaration of the group number. The same applies to the sockets in a group.

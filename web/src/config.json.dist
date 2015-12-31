@@ -1,12 +1,12 @@
 {
   "server": {
-    "host": "lucalightpi",
+    "host": "localhost",
     "port": 8080
   },
   "groups": [
     {
       "groupname": "Group 1",
-      "sockets": ["RS1", "RS2", "RS3", "RS4"]
+      "sockets": ["Socket1", "Socket2", "Socket3", "Socket4"]
     }
   ]
 }
