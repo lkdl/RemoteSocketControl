@@ -18,11 +18,11 @@ rscApp.config(['$routeProvider', '$locationProvider',
         // Routes
         $routeProvider.
         when('/', {
-            templateUrl: '/partials/sockets.html',
+            templateUrl: 'sockets.html',
             resolve: {checkAuth: checkAuth}
         }).
         when('/login', {
-            templateUrl: '/partials/login.html'
+            templateUrl: 'login.html'
         }).
         otherwise({
             redirectTo: '/'
